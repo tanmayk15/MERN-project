@@ -37,7 +37,10 @@ app.use(cors({
     const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
     return callback(new Error(msg), false);
   },
-  credentials: true
+  credentials: true,
+  optionsSuccessStatus: 200, // Some legacy browsers choke on 204
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'X-Requested-With', 'Accept']
 }));
 app.use(express.json());
 
@@ -78,6 +81,12 @@ app.get("/api/db-test", async (req, res) => {
       error: error.message
     });
   }
+});
+
+// Request logging middleware for debugging
+app.use((req, res, next) => {
+  console.log(`🌐 ${new Date().toISOString()} - ${req.method} ${req.url} from ${req.get('Origin') || 'unknown'}`);
+  next();
 });
 
 // API Routes

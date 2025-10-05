@@ -56,6 +56,30 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+// Database test endpoint
+app.get("/api/db-test", async (req, res) => {
+  try {
+    const User = require('./models/User');
+    
+    // Test database connection
+    const userCount = await User.countDocuments();
+    
+    res.json({
+      status: "ok",
+      message: "Database connection successful",
+      userCount: userCount,
+      dbName: mongoose.connection.db.databaseName,
+      readyState: mongoose.connection.readyState // 1 = connected
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: "error",
+      message: "Database connection failed",
+      error: error.message
+    });
+  }
+});
+
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);

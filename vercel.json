@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "mern-project-frontend",
+  "name": "projectmanager-tanmay",
   "builds": [
     {
       "src": "frontend/package.json",

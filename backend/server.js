@@ -11,7 +11,10 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:3000', // Development
   'https://localhost:3000', // Development HTTPS
-  process.env.FRONTEND_URL, // Production frontend
+  'https://projectmanager-tanmay.vercel.app', // Production frontend (clean URL)
+  'https://frontend-dkomc175b-tanmayk15s-projects.vercel.app', // Current Vercel URL
+  'https://frontend-qqavbajaw-tanmayk15s-projects.vercel.app', // Previous Vercel URL
+  process.env.FRONTEND_URL, // Production frontend from env
   process.env.CORS_ORIGIN // Additional allowed origin
 ].filter(Boolean); // Remove undefined values
 
@@ -20,13 +23,19 @@ app.use(cors({
     // Allow requests with no origin (like mobile apps or curl)
     if (!origin) return callback(null, true);
     
+    // Check if origin is allowed
     if (allowedOrigins.indexOf(origin) !== -1) {
       return callback(null, true);
-    } else {
-      console.log('CORS blocked origin:', origin);
-      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-      return callback(new Error(msg), false);
     }
+    
+    // Also allow any vercel.app subdomain for your project
+    if (origin && origin.includes('tanmayk15s-projects.vercel.app')) {
+      return callback(null, true);
+    }
+    
+    console.log('CORS blocked origin:', origin);
+    const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+    return callback(new Error(msg), false);
   },
   credentials: true
 }));

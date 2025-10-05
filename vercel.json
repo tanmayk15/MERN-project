@@ -1,8 +1,15 @@
 {
   "version": 2,
   "name": "mern-project-frontend",
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/build",
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/static/(.*)",

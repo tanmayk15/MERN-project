@@ -1,65 +1,6 @@
-<<<<<<< HEAD
-# MERN-project
-=======
-# Placeholder# 🚀 MERN Project Management System# 🚀 MERN Project Management System
-
-New unified README was previously created but appears missing. Will re-add in next step.
-
-
-> A modern, full-stack web application for managing projects with real-time analytics and intuitive user interface.> A modern, full-stack web application for managing projects built with MongoDB, Express.js, React, and Node.js.
-
-
-
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?logo=mongodb)](https://www.mongodb.com/)[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green)](https://www.mongodb.com/)
-
-[![Express.js](https://img.shields.io/badge/Express.js-4.18.2-blue?logo=express)](https://expressjs.com/)[![Express.js](https://img.shields.io/badge/Express.js-4.18.2-blue)](https://expressjs.com/)
-
-[![React](https://img.shields.io/badge/React-18.2.0-61dafb?logo=react)](https://reactjs.org/)[![React](https://img.shields.io/badge/React-18.2.0-61dafb)](https://reactjs.org/)
-
-[![Node.js](https://img.shields.io/badge/Node.js-16+-green?logo=node.js)](https://nodejs.org/)[![Node.js](https://img.shields.io/badge/Node.js-16+-green)](https://nodejs.org/)
-
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.1-purple?logo=bootstrap)](https://getbootstrap.com/)
-
-## ✨ Project Status
-
----
-
-**🎉 Fully Functional!** All core features implemented and working in production-ready state.
-
-## 📋 Table of Contents
-
-## � Documentation
-
-- [Overview](#-overview)
-
-- [Features](#-features)**Comprehensive documentation is available in the `/docs` folder:**
-
-- [Tech Stack](#-tech-stack)
-
-- [Project Structure](#-project-structure)- **[📖 Complete Documentation](docs/README.md)** - Full project overview, tech stack, and getting started guide
-
-- [Getting Started](#-getting-started)- **[🛠️ Setup Guide](docs/SETUP-GUIDE.md)** - Detailed installation and configuration instructions
-
-- [API Documentation](#-api-documentation)- **[📡 API Documentation](docs/API-DOCUMENTATION.md)** - Complete API reference with examples
-
-- [Deployment](#-deployment)- **[🚀 Deployment Guide](docs/DEPLOYMENT-GUIDE.md)** - Production deployment instructions
-
-- [Screenshots](#-screenshots)- **[✨ Features Documentation](docs/FEATURES.md)** - Comprehensive feature guide with usage examples
-
-- [Contributing](#-contributing)
-
-- [License](#-license)## ⚡ Quick Start
-
-
-
----### Prerequisites
-
-- Node.js v16 or higher
-
-## 🌟 Overview- MongoDB Atlas account (free tier available)
 # 🚀 MERN Project Management System
 
-> A modern, full-stack web application for managing projects with real-time analytics and intuitive user interface.
+A modern, full-stack web application for managing projects with real-time analytics and intuitive user interface.
 
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?logo=mongodb)](https://www.mongodb.com/)
 [![Express.js](https://img.shields.io/badge/Express.js-4.18.2-blue?logo=express)](https://expressjs.com/)
@@ -291,11 +232,6 @@ Guidelines: small focused functions, validate inputs, update docs when adding fe
 
 ---
 
-## 📄 License
-ISC License – free use with attribution.
-
----
-
 ## 🙌 Support
 | Type | Action |
 |------|--------|
@@ -305,9 +241,6 @@ ISC License – free use with attribution.
 
 ---
 
-**Built with ❤️ using the MERN Stack**  
-MongoDB • Express • React • Node.js  
-**Last Updated:** October 5, 2025
 
    - Register a new user
    - Login
@@ -325,22 +258,6 @@ MongoDB • Express • React • Node.js
    - Set up uptime monitoring (UptimeRobot, Pingdom)
 
 **📋 For detailed deployment instructions, see [DEPLOYMENT-GUIDE.md](docs/DEPLOYMENT-GUIDE.md)**
-
----
-
-## 📸 Screenshots
-
-### Login Page
-Modern gradient design with floating labels and clean interface.
-
-### Dashboard
-Real-time analytics with interactive Highcharts showing department-wise project distribution.
-
-### Projects Page
-Comprehensive project listing with search, filter, and pagination capabilities.
-
-### Add Project
-Intuitive form with date pickers, dropdowns, and validation.
 
 ---
 
@@ -568,4 +485,4 @@ MongoDB • Express.js • React • Node.js
 **Last Updated:** October 5, 2025
 
 </div>
->>>>>>> 36fb6ea (chore: initial commit of MERN Project Management System)
+

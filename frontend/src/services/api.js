@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create axios instance with base configuration
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api',
+  baseURL: process.env.REACT_APP_API_URL || 'https://mern-project-backend-szud.onrender.com/api',
   timeout: 30000, // Increased from 10s to 30s for Render cold starts
   headers: {
     'Content-Type': 'application/json',
